@@ -1,3 +1,13 @@
+provider "helm" {
+  kubernetes {
+    config_path = "~/.kube/config"
+  }
+}
+
+provider "kubernetes" {
+  config_path = "~/.kube/config"
+}
+
 resource "helm_release" "csi" {
   name       = "csi-secrets-store"
   chart      = "secrets-store-csi-driver"
