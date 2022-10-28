@@ -22,4 +22,3 @@ module "irsa" {
   service_account  = "csi-sa"
   role_policy_arns = [aws_iam_policy.policy.arn]
 }
-
