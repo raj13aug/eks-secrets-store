@@ -4,7 +4,7 @@ data "aws_iam_policy_document" "document" {
       "secretsmanager:*",
     ]
     resources = [
-      "arn:aws:secretsmanager:::*",
+      "arn:aws:secretsmanager:us-east-1:932999788441:secret:*",
     ]
   }
 }
